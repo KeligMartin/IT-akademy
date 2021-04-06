@@ -20,7 +20,9 @@ public class Student extends Person {
     @Override
     public String toString() {
         return "Student{" +
-                "promotion=" + promotion +
+                "name=" + this.getName() +
+                ", firstname=" + this.getFirstName() +
+                ", promotion=" + promotion +
                 '}';
     }
 }
