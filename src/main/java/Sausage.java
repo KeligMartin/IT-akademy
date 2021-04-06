@@ -1,4 +1,4 @@
-public class Sausage {
+public class Sausage implements Aliment {
 
     private double length;
     private double diameter;
@@ -10,7 +10,8 @@ public class Sausage {
         this.meat = meat;
     }
 
-    public void cook(){
+    @Override
+    public void cook(int minutes){
         this.length = this.length * 0.9;
         this.diameter *= 0.9;
     }
